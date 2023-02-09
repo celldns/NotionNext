@@ -21,7 +21,7 @@ const BlogPostListPage = ({ page = 1, posts = [], postCount, siteInfo }) => {
       <div id="container" className='w-full'>
         <div className='pt-6'></div>
         {/* 文章列表 */}
-        <div className="px-4 pt-4 xl:columns-3 md:columns-2 pb-24" >
+        <div className="px-4 pt-4 xl:columns-4 md:columns-3 pb-24" >
           {posts.map(post => (
             <BlogPostCard key={post.id} post={post} siteInfo={siteInfo} />
           ))}
