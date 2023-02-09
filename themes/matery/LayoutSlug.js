@@ -50,19 +50,6 @@ export const LayoutSlug = props => {
                         {lock && <ArticleLock validPassword={validPassword} />}
 
                         {!lock && <div id="container" className="overflow-x-auto md:w-full px-3 ">
-                            {post?.type === 'Post' && <>
-                                <div
-                                    data-aos="fade-down"
-                                    data-aos-duration="500"
-                                    data-aos-easing="ease-in-out"
-                                    data-aos-once="false"
-                                    data-aos-anchor-placement="top-center"
-                                    className='px-10'>
-                                    <ArticleInfo post={post} />
-                                </div>
-                                <hr />
-                            </>}
-
                             <div className='lg:px-10 '>
                                 <article itemScope itemType="https://schema.org/Movie" className="subpixel-antialiased overflow-y-hidden" >
                                     {/* Notion文章主体 */}
